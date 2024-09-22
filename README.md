@@ -1,28 +1,37 @@
-<<<<<<< HEAD
-# admin-dashboard-java
-A Spring Boot-based Admin Dashboard with user, role, and permission management.
-=======
-# Admin Dashboard 后台管理系统
 
-## 功能
-- 用户管理：添加、删除、更新用户
-- 角色管理：为用户分配角色，设置权限
-- 权限管理：为角色分配权限
-- 安全：基于 Spring Security 的权限控制
+# Admin Dashboard Java
 
-## 如何运行
+## Overview
+This is a **Spring Boot-based Admin Dashboard** that allows for the management of users, roles, and permissions. It uses **Spring Security** for authentication and authorization, providing a secure platform for managing backend functionalities.
 
-1. 克隆项目。
-2. 创建 MySQL 数据库 `admin_dashboard`，并在 `application.properties` 文件中配置数据库连接。
-3. 运行 `AdminDashboardApplication.java`，启动服务。
-4. 使用 Postman 或其他工具通过 RESTful API 进行测试。
+## Features
+- **User Management**: Create, update, delete users.
+- **Role Management**: Assign roles to users.
+- **Permission Management**: Define and assign permissions to roles.
+- **Security**: Role-based access control (RBAC) using Spring Security.
 
-## API 列表
+## How to Run
 
-- `GET /api/users`：获取所有用户
-- `POST /api/users`：创建新用户
-- `DELETE /api/users/{id}`：删除用户
-- `GET /api/roles`：获取所有角色
-- `POST /api/roles`：创建新角色
-- `DELETE /api/roles/{id}`：删除角色
->>>>>>> 45ffdb1 (Initial commit)
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/admin-dashboard-java.git
+   ```
+2. **Set up the database**:
+   - Create a MySQL database named `admin_dashboard`.
+   - Configure the database connection in the `application.properties` file.
+3. **Run the application**:
+   - Navigate to the project directory and run the Spring Boot application:
+     ```bash
+     mvn spring-boot:run
+     ```
+4. **Test the API**:
+   - Use Postman or any other API testing tool to interact with the endpoints.
+
+## API Endpoints
+
+- `GET /api/users`: Retrieve all users.
+- `POST /api/users`: Create a new user.
+- `DELETE /api/users/{id}`: Delete a user.
+- `GET /api/roles`: Retrieve all roles.
+- `POST /api/roles`: Create a new role.
+- `DELETE /api/roles/{id}`: Delete a role.
